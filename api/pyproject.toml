@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "API service for Code Judge"
 requires-python = ">=3.12"
 dependencies = [
+    "alembic>=1.18.5",
     "fastapi>=0.115,<1.0",
     "psycopg[binary]>=3.2,<4.0",
     "sqlalchemy>=2.0,<3.0",
