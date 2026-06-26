@@ -1,8 +1,11 @@
 from fastapi import FastAPI, HTTPException, status
 from sqlalchemy.exc import SQLAlchemyError
 
-from app.db import check_database_connection
+from api.app.core.db import check_database_connection
 
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = FastAPI(title="Code Judge API", version="0.1.0")
 
